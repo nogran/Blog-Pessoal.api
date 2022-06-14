@@ -1,4 +1,4 @@
-	package com.generation.blogpessoal.model;
+package com.generation.blogpessoal.model;
 
 import java.util.List;
 
@@ -16,6 +16,8 @@ import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 @Entity
 @Table(name = "tb_usuarios")	
 public class Usuario {
@@ -27,11 +29,12 @@ public class Usuario {
 	@NotNull(message = "O atributo Nome é Obrigatório!")
 	private String nome;
 	
-	@NotNull(message = "O atributo Usuário é Obrigatório!")
+	@NotNull(message = "O atributo Usuário é obrigatório!")
 	@Email(message = "O atributo Usuário deve ser um email válido!")
+	@Schema(example = "email@email.com.br")
 	private String usuario;
 	
-	@NotBlank(message = "O atributo Senha é Obrigatório!")
+	@NotBlank(message = "O atributo Senha é obrigatório!")
 	@Size(min = 8, message = "A Senha deve ter no mínimo 8 caracteres")
 	private String senha;
 	
