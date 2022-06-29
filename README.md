@@ -2,7 +2,9 @@
 API para blog pessoal, consumo em React.
 
 - [**Front-End**](https://github.com/nogran/Blog-Pessoal-Front-End)<br>
+    - https://nogran-blog.netlify.app/
 - [**Back-End**](https://github.com/nogran/Blog-Pessoal-Back-End)
+    - https://nogran-blog.herokuapp.com/
 
 ## Tools Front-End
 - [**TypeScript**](https://www.typescriptlang.org/)
